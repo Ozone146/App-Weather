@@ -1,1 +1,9 @@
-Start
+number = input("Enter a number: ")
+please = "Please"
+integer = "integer"
+
+try:
+    number = int(number)
+    print(f"You entered the number: {number}")
+except:
+    print(f"That's not a valid number.{please} enter an {integer}.")

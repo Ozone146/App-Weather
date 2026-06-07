@@ -1,0 +1,20 @@
+import random
+
+isTrue = True
+
+def roll_dice():
+    variable1 = random.randint(1, 6)
+    variable2 = random.randint(1, 6)
+    return f"({variable1}, {variable2})"
+
+while isTrue:
+    user_input = input("Roll the dice? (y/n): ").lower()
+    if user_input == "y":
+        print(roll_dice())
+    elif user_input == "n":
+        isTrue = False
+    else:
+        print("Invalid choice!")
+
+
+print("Thanks for playing!")
